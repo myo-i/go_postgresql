@@ -9,3 +9,7 @@ https://stackoverflow.com/questions/52789531/how-do-i-solve-panic-sql-unknown-dr
 ## DBのポート番号やホスト、ポート番号などの確認方法
 参考記事  
 https://stackoverflow.com/questions/58573628/how-do-you-get-the-url-of-a-postgresql-database-you-made-in-pgadmin
+
+## GoのGenerics
+参考記事  
+https://www.wakuwakubank.com/posts/868-go-generics/
