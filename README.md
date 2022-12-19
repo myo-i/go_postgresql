@@ -12,6 +12,6 @@ https://stackoverflow.com/questions/58573628/how-do-you-get-the-url-of-a-postgre
 
 ## GoのGenerics
 参考記事  (汎用的)
-https://www.wakuwakubank.com/posts/868-go-generics/
+https://www.wakuwakubank.com/posts/868-go-generics/  
 引数に([]int, int)や([]string, string)を使いたいときに参考になった記事  
 https://eli.thegreenplace.net/2021/generic-functions-on-slices-with-go-type-parameters/
