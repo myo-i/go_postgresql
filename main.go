@@ -14,7 +14,8 @@ func selectStatement() {
 	//SELECT.OrderByLimit()
 	//SELECT.ChallengeOrderBy()
 	//SELECT.Between()
-	SELECT.In()
+	//SELECT.In()
+	SELECT.LikeILike()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
