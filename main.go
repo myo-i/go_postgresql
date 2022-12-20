@@ -12,7 +12,8 @@ func selectStatement() {
 	//SELECT.Count()
 	//SELECT.ChallengeWhere()
 	//SELECT.OrderByLimit()
-	SELECT.ChallengeOrderBy()
+	//SELECT.ChallengeOrderBy()
+	SELECT.Between()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
