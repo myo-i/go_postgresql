@@ -10,7 +10,9 @@ func selectStatement() {
 	//SELECT.ChallengeSelect()
 	//SELECT.ChallengeDistinct()
 	//SELECT.Count()
-	SELECT.ChallengeWhere()
+	//SELECT.ChallengeWhere()
+	//SELECT.OrderByLimit()
+	SELECT.ChallengeOrderBy()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
