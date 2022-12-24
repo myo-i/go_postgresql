@@ -19,7 +19,7 @@ func innerJoin1() {
 		log.Fatalln(err)
 	}
 
-	// ASは変更したいカラムの直後に記述し、さらにASはどこに記述してもクエリの最後に実行される
+	// INNER JOINは指定したカラムの値がテーブルA、テーブルBどちらも同じものを結合して取得できる
 	rows, err := db.Query("SELECT payment_id, payment.customer_id, first_name FROM payment INNER JOIN customer ON payment.customer_id = customer.customer_id;")
 	var pp []PaymentCustomer
 	for rows.Next() {
