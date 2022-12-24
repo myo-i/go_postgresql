@@ -3,19 +3,8 @@ package JOINS
 import (
 	"database/sql"
 	"fmt"
-	"github.com/go-ini/ini"
 	"log"
 )
-
-type ConfigList struct {
-	Port     string
-	Host     string
-	User     string
-	Password string
-	DbName   string
-}
-
-var Config ConfigList
 
 type TellChangeTaxLaws struct {
 	District string
@@ -28,28 +17,8 @@ type ActorsWork struct {
 	LastName  string
 }
 
-func init() {
-	cfg, _ := ini.Load("config.ini")
-	Config = ConfigList{
-		Port:     cfg.Section("web").Key("port").String(),
-		Host:     cfg.Section("db").Key("host").String(),
-		User:     cfg.Section("db").Key("user").String(),
-		Password: cfg.Section("db").Key("password").String(),
-		DbName:   cfg.Section("db").Key("dbname").String(),
-	}
-}
-
 func challengeJoins1() {
-	// "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable"
-	host := "host=" + Config.Host
-	port := " port=" + Config.Port
-	user := " user=" + Config.User
-	password := " password=" + Config.Password
-	dbname := " dbname=" + Config.DbName
-	datasource := host + port + user + password + dbname + " sslmode=disable"
-	//fmt.Println("aaaaaaaaaaaaaaaaaaaaaa" + datasource)
-
-	db, err := sql.Open("postgres", datasource)
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln("SQL Open Error has occured", err)
@@ -75,7 +44,7 @@ func challengeJoins1() {
 
 // 応用的な問題だったので要復習だけど全然できた！！
 func challengeJoins2() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -111,5 +80,5 @@ func challengeJoins2() {
 
 func ChallengeJoins() {
 	challengeJoins1()
-	//challengeJoins2()
+	challengeJoins2()
 }
