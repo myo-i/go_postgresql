@@ -25,7 +25,7 @@ type PayPerDate struct {
 func groupby1() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -51,7 +51,7 @@ func groupby1() {
 func groupby2() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -76,7 +76,7 @@ func groupby2() {
 func groupbyDate() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
