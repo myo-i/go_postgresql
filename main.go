@@ -38,7 +38,8 @@ func joins() {
 	//JOINS.As()
 	//JOINS.InnerJoin()
 	//JOINS.FullOuterJoin()
-	JOINS.LeftOuterJoin()
+	//JOINS.LeftOuterJoin()
+	JOINS.ChallengeJoins()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
