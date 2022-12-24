@@ -9,7 +9,7 @@ import (
 func challenge1() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -30,7 +30,7 @@ func challenge1() {
 func challenge2() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -51,7 +51,7 @@ func challenge2() {
 func challenge3() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -72,7 +72,7 @@ func challenge3() {
 func challenge4() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -93,7 +93,7 @@ func challenge4() {
 func challenge5() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)

@@ -22,7 +22,7 @@ type CustomerPayRank struct {
 }
 
 func challengeGroupBy1() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -45,7 +45,7 @@ func challengeGroupBy1() {
 }
 
 func challengeGroupBy2() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -68,7 +68,7 @@ func challengeGroupBy2() {
 }
 
 func challengeGroupBy3() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)

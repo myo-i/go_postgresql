@@ -13,7 +13,7 @@ type PaymentCustomer struct {
 }
 
 func innerJoin1() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)

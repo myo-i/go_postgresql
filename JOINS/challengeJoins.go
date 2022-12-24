@@ -18,10 +18,10 @@ type ActorsWork struct {
 }
 
 func challengeJoins1() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
-		log.Fatalln(err)
+		log.Fatalln("SQL Open Error has occured", err)
 	}
 
 	// FULL OUTER JOINはベン図でいうと、一致するものから片方にしかないものまで全て取得する
@@ -44,7 +44,7 @@ func challengeJoins1() {
 
 // 応用的な問題だったので要復習だけど全然できた！！
 func challengeJoins2() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -79,6 +79,6 @@ func challengeJoins2() {
 }
 
 func ChallengeJoins() {
-	//challengeJoins1()
+	challengeJoins1()
 	challengeJoins2()
 }

@@ -12,7 +12,7 @@ type CustomerPayment struct {
 }
 
 func as1() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -35,7 +35,7 @@ func as1() {
 }
 
 func as2() {
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
