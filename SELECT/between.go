@@ -12,7 +12,7 @@ var paymentDate []string
 func betweenInt() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
@@ -35,7 +35,7 @@ func betweenInt() {
 
 func betweenDate() {
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)

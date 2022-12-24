@@ -3,8 +3,9 @@ package SELECT
 import (
 	"database/sql"
 	"fmt"
-	_ "github.com/lib/pq"
 	"log"
+
+	_ "github.com/lib/pq"
 )
 
 type Name struct {
@@ -15,7 +16,7 @@ type Name struct {
 func Select() {
 	//connStr := "postgresql://postgres:password@::1/todos?sslmode=disable"
 
-	db, err := sql.Open("postgres", "host=localhost port=5432 user=postgres password=password dbname=dvdrental sslmode=disable")
+	db, err := sql.Open("postgres", DataSource)
 	defer db.Close()
 	if err != nil {
 		log.Fatalln(err)
