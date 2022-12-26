@@ -18,3 +18,6 @@ https://eli.thegreenplace.net/2021/generic-functions-on-slices-with-go-type-para
 
 ## PostgeSQL正規表現
 https://www.postgresql.org/docs/current/functions-matching.html
+
+## postgresqlで扱えるデータ関連の関数など
+https://www.postgresql.org/docs/current/functions-formatting.html
