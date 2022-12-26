@@ -44,7 +44,8 @@ func joins() {
 }
 
 func advanced() {
-	AdvancedSQLCommands.TimeStamp()
+	//AdvancedSQLCommands.TimeStamp()
+	AdvancedSQLCommands.ChallengeTimeAndToChar()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
