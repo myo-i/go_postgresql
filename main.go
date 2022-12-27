@@ -2,6 +2,7 @@ package main
 
 import (
 	_ "github.com/lib/pq"
+	"go_postgresql/AdvancedSQLCommands"
 	"go_postgresql/GROUP_BY"
 	"go_postgresql/JOINS"
 	"go_postgresql/SELECT"
@@ -42,10 +43,20 @@ func joins() {
 	JOINS.ChallengeJoins()
 }
 
+func advanced() {
+	//AdvancedSQLCommands.TimeStamp()
+	//AdvancedSQLCommands.ChallengeTimeAndToChar()
+	//AdvancedSQLCommands.Math()
+	//AdvancedSQLCommands.String()
+	//AdvancedSQLCommands.SubQuery()
+	AdvancedSQLCommands.SelfJoin()
+}
+
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
 func main() {
 	//selectStatement()
 	//groupBy()
 	//test()
-	joins()
+	//joins()
+	advanced()
 }
