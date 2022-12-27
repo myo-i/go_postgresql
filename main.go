@@ -47,7 +47,8 @@ func advanced() {
 	//AdvancedSQLCommands.TimeStamp()
 	//AdvancedSQLCommands.ChallengeTimeAndToChar()
 	//AdvancedSQLCommands.Math()
-	AdvancedSQLCommands.String()
+	//AdvancedSQLCommands.String()
+	AdvancedSQLCommands.SubQuery()
 }
 
 // main関数を実行するには実行構成の編集でディレクトリを選択し、goファイルのパッケージ名をmainにし、main関数を作成しないといけない
