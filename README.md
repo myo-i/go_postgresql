@@ -24,3 +24,6 @@ https://www.postgresql.org/docs/current/functions-formatting.html
 
 ## 数学の関数や演算子
 https://www.postgresql.org/docs/9.5/functions-math.html
+
+## 文字列に関しての関数や演算子
+https://www.postgresql.org/docs/9.1/functions-string.html
