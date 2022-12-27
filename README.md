@@ -21,3 +21,6 @@ https://www.postgresql.org/docs/current/functions-matching.html
 
 ## postgresqlで扱えるデータ関連の関数など
 https://www.postgresql.org/docs/current/functions-formatting.html
+
+## 数学の関数や演算子
+https://www.postgresql.org/docs/9.5/functions-math.html
