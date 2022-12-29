@@ -27,3 +27,9 @@ https://www.postgresql.org/docs/9.5/functions-math.html
 
 ## 文字列に関しての関数や演算子
 https://www.postgresql.org/docs/9.1/functions-string.html
+
+## DB新規作成
+1. tarファイルなどを指定の場所に配置
+2. posegresqlのデータベースを右クリックして作成→データベースを押して、適当にDBの名前を付ける
+3. 作成したDBを右クリック→リストアを押してパスを指定、そしてデータ/オブジェクトのセクションにある前データ、データ、後データすべてにチェックを入れてリストア
+最後に作成したDBを右クリックして再読み込みをする
