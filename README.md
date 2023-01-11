@@ -33,3 +33,6 @@ https://www.postgresql.org/docs/9.1/functions-string.html
 2. posegresqlのデータベースを右クリックして作成→データベースを押して、適当にDBの名前を付ける
 3. 作成したDBを右クリック→リストアを押してパスを指定、そしてデータ/オブジェクトのセクションにある前データ、データ、後データすべてにチェックを入れてリストア
 4. 最後に作成したDBを右クリックして再読み込みをする
+
+## 型変換
+https://postgresweb.com/post-342
